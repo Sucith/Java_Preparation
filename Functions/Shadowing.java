@@ -1,4 +1,4 @@
-package Function;
+package Functions;
 
 public class Shadowing {
 	static int x=90;

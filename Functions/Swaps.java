@@ -1,4 +1,4 @@
-package Function;
+package Functions;
 
 public class Swaps {
 	public static void main(String [] args) {
