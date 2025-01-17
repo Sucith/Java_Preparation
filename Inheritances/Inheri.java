@@ -40,11 +40,11 @@ public class Inheri {
 	public static class BoxWeight extends Box{		// The extends make the child class to inherit all the properties of the parent class into the child class.
 		double weight;
 		
-		BoxWeight(){
+		BoxWeight(){		//Constructor of the child class
 			this.weight=-1;
 		}
 		BoxWeight(double l,double h, double w,double weight){
-			super(l,h,w);			// Here this line is used to call the values that are present in the parent class parameter
+			super(l,h,w);			// Here this line is used to call the values that are present in the parent class's instance variables
 			this.weight=weight;
 		}
 	}
@@ -52,6 +52,7 @@ public class Inheri {
 	public static void main(String[] args) {
 		Box box=new Box();// Runs the contructor with no arguments
 		box.info();
+		
 		System.out.println(box.l+" "+box.h+" "+box.w);		
 		// Runs the cons with one arg
 		Box box1= new Box(54);
@@ -62,7 +63,6 @@ public class Inheri {
 		//Copy constructor
 		Box box3=new Box(box);
 		System.out.println(box3.l+" "+box3.h+" "+box3.w);		
-		
 		
 		BoxWeight boxW=new BoxWeight();			// here the constructor BoxWeight tries to access the l and h that are not inside it , but it is accessed thro' the concept of inheritance
 		System.out.println("INHERITANCE");

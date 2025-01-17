@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritances;
 
 public class Polymorphism {
 	public static class Shapes{
