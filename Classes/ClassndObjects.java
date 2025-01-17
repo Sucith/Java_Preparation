@@ -1,4 +1,4 @@
-package Classes;
+package Class;
 
 public class ClassndObjects {
 	public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class ClassndObjects {
 //		String[]name=new String[5];
 //		float[]marks=new float[5];
 		
-		Student sucith=new Student();
-		Student sucith1=new Student(51,"XXX",90.4f);
+		Student sucith=new Student();			//Empty constructor
+		Student sucith1=new Student(51,"XXX",90.4f);	// The argument constructor
 //		sucith.rollno=61;
 //		sucith.name="Sucith";	// normal way to assigning data
 //		sucith.marks=83.2f;
@@ -36,13 +36,13 @@ public class ClassndObjects {
 		String name;
 		float marks;
 		
-		Student(){
+		Student(){		// Empty Constructor
 			this.rollno=62;
 			this.name="Adaar";
 			this.marks=93.3f;
 		}
 		
-		Student(int roll,String naam, float mark){
+		Student(int roll,String naam, float mark){		//Constructor with arguments
 			this.rollno=roll;
 			this.name=naam;
 			this.marks=mark;
